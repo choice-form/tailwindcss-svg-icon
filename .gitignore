@@ -1,0 +1,59 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+example/
+
+# dependencies
+node_modules/
+.npmrc
+.pnp/
+.pnp.js
+.cache/
+
+# ide
+.idea
+
+# testing
+coverage/
+**/playwright/.cache/
+**/playwright-report/
+.tour
+zx-local*
+
+# next.js
+.next/
+out/
+
+# production
+.rollup.cache/
+esbuild/
+build/
+dist/
+storybook-static/
+target/
+
+# misc
+.astro
+.DS_Store
+.eslintcache
+.turbo
+.turbo-cookie
+*.log
+*.pem
+*.code-workspace
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+.turbo-cookie

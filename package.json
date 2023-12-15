@@ -1,0 +1,33 @@
+{
+  "name": "@choiceform/tailwindcss-svg-icon",
+  "version": "0.0.1",
+  "description": "A Tailwind CSS plugin that allows you to use encoded SVG files as CSS data URLs",
+  "type": "module",
+  "exports": {
+    ".": "./dist/tailwind-plugin.cjs",
+    "./values": "./dist/icons.json"
+  },
+  "main": "./dist/tailwind-plugin.cjs",
+  "contributors": [
+    "张鑫 <zhang.xin@choiceform.com>",
+    "Wester <wester@choiceform.com>"
+  ],
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "init": "^0.1.2",
+    "svgo": "^3.1.0"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
