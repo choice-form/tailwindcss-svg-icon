@@ -1,11 +1,11 @@
 # @choiceform/tailwindcss-svg-icon
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://raw.githubusercontent.com/choice-form/tailwindcss-svg-icon/e62b549947e5940e5b92ffa77dfbb791269e0bbf/LICENSE)](LICENSE)
 [![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)](https://tailwindcss.com/)
 
 A Tailwind CSS plugin that allows you to use encoded SVG files as CSS data URLs.
 
-## ![capture](/assets/capture.png)
+## ![capture](https://github.com/choice-form/tailwindcss-svg-icon/raw/e62b549947e5940e5b92ffa77dfbb791269e0bbf/assets/capture.png)
 
 ## Installation
 
@@ -51,7 +51,7 @@ module.exports = {
 
 This plugin supports code completion in Visual Studio Code. It provides suggestions and auto-completion for your code as you type. This can greatly improve your productivity and help you write code more efficiently.
 
-![code-completion](/assets/auto-completion.png)
+![code-completion](https://github.com/choice-form/tailwindcss-svg-icon/raw/e62b549947e5940e5b92ffa77dfbb791269e0bbf/assets/auto-completion.png)
 
 ### Customize size
 
@@ -59,7 +59,7 @@ You can customize the default size of the icons by adjusting the defaultSize opt
 
 Additionally, you can also use Tailwind CSS's classes to change the size of the icons.
 
-![size](/assets/size.png)
+![size](https://github.com/choice-form/tailwindcss-svg-icon/raw/e62b549947e5940e5b92ffa77dfbb791269e0bbf/assets/size.png)
 
 ```html
 <div className="icon-[sharp/mastodon] w-16 h-16" />
@@ -69,7 +69,7 @@ Additionally, you can also use Tailwind CSS's classes to change the size of the 
 
 By using the `currentColor` value for the `fill` or `stroke` property in your SVG, you can dynamically inherit the color from the parent element. This allows for easy customization and theming of SVG icons.
 
-![currentColor](/assets/current-color.png)
+![currentColor](https://github.com/choice-form/tailwindcss-svg-icon/raw/e62b549947e5940e5b92ffa77dfbb791269e0bbf/assets/current-color.png)
 
 Example usage:
 
@@ -93,11 +93,11 @@ In this example, the SVG icon will inherit the color `blue-500` from the parent 
 
 > If the SVG does not have the currentColor property, it will render in its original color and cannot have its color changed using Tailwind CSS classes.
 
-![color](/assets/color.png)
+![color](https://github.com/choice-form/tailwindcss-svg-icon/raw/e62b549947e5940e5b92ffa77dfbb791269e0bbf/assets/color.png)
 
 ### Supports Tailwindcss Handling Hover, Focus, and Other States
 
-![Handling](/assets/handling.png)
+![Handling](https://github.com/choice-form/tailwindcss-svg-icon/raw/e62b549947e5940e5b92ffa77dfbb791269e0bbf/assets/handling.png)
 
 ```html
 <div
@@ -108,14 +108,14 @@ In this example, the SVG icon will inherit the color `blue-500` from the parent 
 
 ### Supports SVG animations
 
-![animation](/assets/animations.gif)
+![animation](https://github.com/choice-form/tailwindcss-svg-icon/raw/e62b549947e5940e5b92ffa77dfbb791269e0bbf/assets/animations.gif)
 
 ##### Credits
 
 This projects uses
 [svgo](https://github.com/svg/svgo)
 
-[![npm](https://img.shields.io/npm/v/svgo)](https://npmjs.org/package/svgo)
+[![npm](https://img.shields.io/npm/v/svgo)](https://www.npmjs.com/package/@choiceform/tailwindcss-svg-icon)
 [![docs](https://img.shields.io/badge/docs-svgo.dev-blue)](https://svgo.dev/)
 
 ## License
