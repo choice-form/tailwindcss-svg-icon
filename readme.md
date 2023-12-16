@@ -1,6 +1,6 @@
 # @choiceform/tailwindcss-svg-icon
 
-[![License](https://raw.githubusercontent.com/choice-form/tailwindcss-svg-icon/e62b549947e5940e5b92ffa77dfbb791269e0bbf/LICENSE)](LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)](https://tailwindcss.com/)
 
 A Tailwind CSS plugin that allows you to use encoded SVG files as CSS data URLs.
