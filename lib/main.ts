@@ -1,8 +1,29 @@
+import { PluginAPI } from "tailwindcss/types/config";
+
 /* eslint-disable n/no-unsupported-features/es-syntax */
 const icons = require("./icons.cjs");
-const plugin = require("tailwindcss/plugin");
+import plugin from "tailwindcss/plugin";
 
-function main(options = {}) {
+export type SVGIconOptions = {
+  /**
+   * @default 'auto'
+   */
+  mode?: "auto";
+  /**
+   * @default 'icon'
+   */
+  classPrefix?: string;
+  /**
+   * @default 1
+   */
+  defaultSize?: number;
+  /**
+   * @default 'rem'
+   */
+  unit?: "rem" | "em" | "px";
+};
+
+function main(options: SVGIconOptions = {}) {
   const {
     mode = "auto",
     classPrefix = "icon",
@@ -15,13 +36,13 @@ function main(options = {}) {
   };
 
   /** @type {import('tailwindcss/types/config').PluginCreator} */
-  return function main({ matchComponents }) {
+  return function main({ matchComponents }: PluginAPI) {
     matchComponents(
       {
         /** @argument {string | object} value */
-        [classPrefix]: (value) => {
+        [classPrefix]: (value: any) => {
           if (typeof value !== "object") {
-            return;
+            return {};
           }
           const isMask = mode === "auto" && value.isMask;
           const props = {
@@ -54,4 +75,4 @@ function main(options = {}) {
   };
 }
 
-module.exports = plugin.withOptions(main);
+export default plugin.withOptions(main);

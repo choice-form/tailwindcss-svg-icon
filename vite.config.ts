@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -7,14 +8,15 @@ export default defineConfig({
     // minify: true,
     lib: {
       entry: [
-        "./lib/tailwind-plugin.cjs",
+        "./lib/main.ts",
+        "./lib/icons.cjs"
       ],
       name: "index",
-      formats: ['cjs', 'es']
+      formats: ['cjs']
     },
     rollupOptions: {
       external: ['fs', 'path', 'url', 'os', 'node:fs', 'node:path']
     }
   },
-  plugins: [],
+  plugins: [dts()],
 });
