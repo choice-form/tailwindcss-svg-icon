@@ -1,6 +1,6 @@
 {
   "name": "@choiceform/tailwindcss-svg-icon",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A Tailwind CSS plugin that allows you to use encoded SVG files as CSS data URLs.",
   "homepage": "https://github.com/choice-form/tailwindcss-svg-icon",
   "author": {
